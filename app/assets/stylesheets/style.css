@@ -1,0 +1,14 @@
+ @import url('https://fonts.googleapis.com/css?family=Mali');
+*, html, body {
+  font-family: 'Mali', cursive;
+}
+.carousel-item {
+  width: 1900px;
+  height: 850px;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  email: MyString
-  password: MyString
-  nombre: MyString
-  descripcion: MyText
+  name: MyString
+  phone: MyString
+  typedoc: MyString
+  numdoc: MyString
 
 two:
-  email: MyString
-  password: MyString
-  nombre: MyString
-  descripcion: MyText
+  name: MyString
+  phone: MyString
+  typedoc: MyString
+  numdoc: MyString

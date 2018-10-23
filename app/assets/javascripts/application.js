@@ -13,3 +13,21 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+function Pagina(sw)
+{
+  switch(sw)
+  {
+    case 1:
+      pag="hoja de vida.html"
+    break;
+    case 2:
+      pag="tercero.html"
+    break;
+    case 3:
+      pag="nombres.html?miguel&david"
+    break;
+  }
+  document.getElementById("Pagina").src = pag;
+}
+console.log(screen.width);

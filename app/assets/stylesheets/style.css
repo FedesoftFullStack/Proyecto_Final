@@ -1,6 +1,7 @@
  @import url('https://fonts.googleapis.com/css?family=Mali');
 *, html, body {
   font-family: 'Mali', cursive;
+  font-size: 25px;
 }
 .carousel-item {
   width: 1900px;

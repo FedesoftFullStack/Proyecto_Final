@@ -14,20 +14,19 @@
 //= require turbolinks
 //= require_tree .
 
-function Pagina(sw)
+function change(sw)
 {
   switch(sw)
   {
+    case 0:
+      pag=""
+    break;
     case 1:
-      pag="hoja de vida.html"
+      pag=""
     break;
     case 2:
-      pag="tercero.html"
-    break;
-    case 3:
-      pag="nombres.html?miguel&david"
+      pag="Login&Register"
     break;
   }
   document.getElementById("Pagina").src = pag;
 }
-console.log(screen.width);

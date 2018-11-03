@@ -163,7 +163,7 @@ function change(sw)
   switch(sw)
   {
     case 0:
-      pag=""
+      pag="servicios"
     break;
     case 1:
       pag=""

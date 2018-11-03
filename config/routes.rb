@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   resources :users
   root to:"pages#index"
   get 'inicio' => 'pages#inicio'
-  get 'registro' => 'pages#Registro'
-  get 'login' => 'pages#Iniciar_Sesion'
-  get 'servicios' => 'pages#Servicios'
+  get 'servicios' => 'pages#Services'
   get 'Login&Register' => 'pages#Login_Register'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :api, defaults: {format:'json'} do

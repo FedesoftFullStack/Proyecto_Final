@@ -3,7 +3,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-
 <html>
   <head>
 
@@ -25,10 +24,10 @@
            </div>
             <form id="Login">
                 <div class="form-group">
-                    <input  class="form-control" id="inputEmail" placeholder="Nombre">
+                    <input  class="form-control" id="NombreR" onkeyup="VerificarNombre()" placeholder="Nombre" >
                 </div>
                 <div class="form-group">
-                  <select class="form-control">
+                  <select id="TipoDocR" class="form-control">
                     <option value="#">Tipo de documento</option>
                     <option value="T.I">T.I</option>
                     <option value="C.C">C.C</option>
@@ -37,25 +36,28 @@
                   </select>
                 </div>
                 <div class="form-group">
-                    <input  class="form-control" id="inputEmail" placeholder="Numero de documento">
+                    <input  class="form-control" id="NumeroDocumentoR" onkeyup="VerificarNumeroDocumento()" maxlength="10" placeholder="Numero de documento">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Contraseña">
+                    <input type="password" id="ContrasenaR" class="form-control" placeholder="Contraseña">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="inputPassword" placeholder=" Confirmar Contraseña">
+                    <input type="password" id="ConfirmContrasenaR"  onkeyup="VerificarContrasena()"  class="form-control" id="inputPassword" placeholder=" Confirmar Contraseña">
+                    <div id ="passwordError" class="dropdown-content">
+                      <p>Las contraseñas no coinciden.</p>
+                      </div>
                 </div>
                 <div class="form-group">
-                  <select class="form-control">
+                  <select id="TipoContactoR" onchange="VerificarTipoContact()" class="form-control">
                     <option value="#">Tipo de contacto</option>
                     <option value="Fijo">Fijo</option>
                     <option value="Celular">Celular</option>
                   </select>
                 </div>
                 <div class="form-group">
-                    <input type="number" class="form-control" id="Telefono" placeholder="Numero de contacto">
+                    <input type="number" class="form-control" id="NumeroContactoR" onkeyup="VerificarNumeroContacto()" placeholder="Numero de contacto">
                 </div>
-                <button type="submit" class="btn btn-primary">Registrarse</button>
+                  <a href="/users.json"><button  type="submit" id = "BTNRegistro"class="btn btn-primary" disabled>Regsitrarse</button></a>
             </form>
             </div>
         </div></div>
@@ -72,7 +74,7 @@
            </div>
             <form id="Login">
                 <div class="form-group">
-                  <select id="LTypedoc" class="form-control">
+                  <select id="LTypedoc" onchange="VerificarTipoDocumentoLogin()" class="form-control">
                     <option value="#">Tipo de documento</option>
                     <option value="T.I">T.I</option>
                     <option value="C.C">C.C</option>
@@ -81,15 +83,15 @@
                   </select>
                 </div>
                 <div class="form-group">
-                    <input  class="form-control" id="LNumdoc" placeholder="Numero de documento">
+                    <input  class="form-control" onkeyup="VerificarNumeroDocumentoLogin()" id="LNumdoc" placeholder="Numero de documento">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="LPassword" placeholder="Contraseña">
+                    <input type="password" onkeyup="VerificarContrasenaLogin()" class="form-control" id="LPassNum" placeholder="Contraseña">
                 </div>
                 <div class="forgot">
                   <a href="reset.html">Forgot password?</a>
                 </div>
-                <button type="submit" id = "Login" class="btn btn-primary">iniciar Sesion</button>
+                  <button  type="submit" id="BTNLogin" class="btn btn-primary" disabled>iniciar Sesion</button>
             </form>
             </div>
         </div></div>
